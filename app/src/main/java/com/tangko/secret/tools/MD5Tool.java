@@ -1,6 +1,5 @@
 package com.tangko.secret.tools;
 
-import com.tangko.secret.net.PubComment;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -8,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class MD5Tool {
 
-	public static String md5(String cachedPhoneNum) {
+	public static String md5(String string) {
 	    byte[] hash;
 	    try {
 	        hash = MessageDigest.getInstance("MD5").digest(string.getBytes("UTF-8"));
